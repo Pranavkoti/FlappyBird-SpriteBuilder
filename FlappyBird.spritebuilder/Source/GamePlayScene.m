@@ -21,6 +21,7 @@
     {
    [physicsNode addChild:character];
     }
+    count = 1;
     timeSinceObstacle += delta; // delta is approximately 1/60th of a second
     
     // Check to see if two seconds have passed
