@@ -17,11 +17,11 @@
     // put update   code here
     character = (Character*)[CCBReader load:@"Character"];
     
-    if ( count == 0 )
+    if ( count  < 5 )
     {
    [physicsNode addChild:character];
     }
-    count = 1;
+    count++;
     timeSinceObstacle += delta; // delta is approximately 1/60th of a second
     
     // Check to see if two seconds have passed
