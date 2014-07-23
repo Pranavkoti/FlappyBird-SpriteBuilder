@@ -9,13 +9,18 @@
     // your code here
     [self addObstacle];
     timeSinceObstacle = 0.0f;
+    count = 0;
 }
 
 -(void)update:(CCTime)delta
 {
     // put update   code here
     character = (Character*)[CCBReader load:@"Character"];
-   // [physicsNode addChild:character];
+    
+    if ( count == 0 )
+    {
+   [physicsNode addChild:character];
+    }
     timeSinceObstacle += delta; // delta is approximately 1/60th of a second
     
     // Check to see if two seconds have passed
