@@ -17,7 +17,7 @@
     // put update   code here
     character = (Character*)[CCBReader load:@"Character"];
     
-    if ( count == 2)
+    //if ( count == 2)
     
     {
         
