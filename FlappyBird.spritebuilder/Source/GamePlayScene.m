@@ -38,7 +38,7 @@ character = (Character*)[CCBReader load:@"Character"];
         // Then reset the timer.
         timeSinceObstacle = 0.0f;
     } */
-}
+//}
 
 // put new methods here
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
