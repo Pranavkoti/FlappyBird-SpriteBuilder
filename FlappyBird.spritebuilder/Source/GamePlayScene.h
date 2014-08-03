@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     int count;
     
     
-    float delta;
+    //float delta;
     
     
 }
