@@ -15,9 +15,9 @@ character = (Character*)[CCBReader load:@"Character"];
 }
 
 
-/*-(void)update:(CCTime)delta
+-(void)update:(CCTime)delta
 {
-    // put update   code here
+     //put update   code here
     character = (Character*)[CCBReader load:@"Character"];
     
     //if ( count == 2)
@@ -37,7 +37,7 @@ character = (Character*)[CCBReader load:@"Character"];
         
         // Then reset the timer.
         timeSinceObstacle = 0.0f;
-    } */
+    } 
 //}
 
 // put new methods here
