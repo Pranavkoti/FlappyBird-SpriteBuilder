@@ -20,7 +20,7 @@ character = (Character*)[CCBReader load:@"Character"];
 
 }
 
-(void)update:(CCTime)delta
+-(void)update:(CCTime)delta
 {
      //put update   code here
   //  character = (Character*)[CCBReader load:@"Character"];
@@ -46,7 +46,7 @@ character = (Character*)[CCBReader load:@"Character"];
 
         // Then reset the timer.
         timeSinceObstacle = 0.0f;
-    }
+    
 }
 
 
