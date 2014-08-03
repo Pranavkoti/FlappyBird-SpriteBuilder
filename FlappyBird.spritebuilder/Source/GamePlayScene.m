@@ -16,8 +16,16 @@ character = (Character*)[CCBReader load:@"Character"];
 
        // Add a new obstacle
         [self addObstacle];
-
-} 
+count++;
+    timeSinceObstacle += delta; // delta is approximately 1/60th of a second
+    
+    // Check to see if two seconds have passed
+    if (timeSinceObstacle > 1.0f)
+    {
+        
+        // Then reset the timer.
+        timeSinceObstacle = 0.0f;
+}
 
 /*-(void)update:(CCTime)delta
 {
@@ -30,15 +38,7 @@ character = (Character*)[CCBReader load:@"Character"];
         
    [physicsNode addChild:character];
     }
-    count++;
-    timeSinceObstacle += delta; // delta is approximately 1/60th of a second
     
-    // Check to see if two seconds have passed
-    if (timeSinceObstacle > 1.0f)
-    {
-        
-        // Then reset the timer.
-        timeSinceObstacle = 0.0f;
     }
 }
  */
