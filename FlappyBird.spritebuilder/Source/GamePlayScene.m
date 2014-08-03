@@ -9,13 +9,13 @@
     // your code here
     [self addObstacle];
     timeSinceObstacle = 0.0f;
-    count = 0;
+    count = 5;
 character = (Character*)[CCBReader load:@"Character"];
 [physicsNode addChild:character];
 }
 
 
--(void)update:(CCTime)delta
+/*-(void)update:(CCTime)delta
 {
      //put update   code here
     character = (Character*)[CCBReader load:@"Character"];
@@ -39,6 +39,7 @@ character = (Character*)[CCBReader load:@"Character"];
         timeSinceObstacle = 0.0f;
     }
 }
+ */
 
 // put new methods here
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
