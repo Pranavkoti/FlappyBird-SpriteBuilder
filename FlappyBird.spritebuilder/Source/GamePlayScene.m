@@ -16,7 +16,7 @@ character = (Character*)[CCBReader load:@"Character"];
 
        // Add a new obstacle
         [self addObstacle];
-
+if ( count == 2)
 }
 
 /*-(void)update:(CCTime)delta
@@ -24,7 +24,7 @@ character = (Character*)[CCBReader load:@"Character"];
      //put update   code here
     character = (Character*)[CCBReader load:@"Character"];
     
-    //if ( count == 2)
+    //
     
     {
         
