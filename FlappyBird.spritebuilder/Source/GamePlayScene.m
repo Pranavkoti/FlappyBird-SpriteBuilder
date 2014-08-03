@@ -5,7 +5,7 @@
 
 - (void)initialize
 {
-    delta count = 0.1f;
+    delta = 0.1f;
     // your code here
     [self addObstacle];
     timeSinceObstacle = 3.0f;
