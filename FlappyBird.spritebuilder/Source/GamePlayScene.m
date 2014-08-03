@@ -12,8 +12,12 @@
     count = 5;
 character = (Character*)[CCBReader load:@"Character"];
 [physicsNode addChild:character];
-}
 
+
+       // Add a new obstacle
+        [self addObstacle];
+
+} 
 
 /*-(void)update:(CCTime)delta
 {
@@ -32,8 +36,6 @@ character = (Character*)[CCBReader load:@"Character"];
     // Check to see if two seconds have passed
     if (timeSinceObstacle > 1.0f)
     {
-        // Add a new obstacle
-        [self addObstacle];
         
         // Then reset the timer.
         timeSinceObstacle = 0.0f;
