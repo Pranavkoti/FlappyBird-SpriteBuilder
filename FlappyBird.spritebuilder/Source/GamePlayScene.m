@@ -5,17 +5,17 @@
 
 - (void)initialize
 {
-    delta = 0.1f;
+    delta = 1/60;
     // your code here
     [self addObstacle];
-    timeSinceObstacle = 1.0f;
+    timeSinceObstacle = 0.0f;
     count = 10;
 character = (Character*)[CCBReader load:@"Character"];
 [physicsNode addChild:character];
 
 timeSinceObstacle += delta;
     
-     if (timeSinceObstacle > 5.5f)
+     if (timeSinceObstacle > 1.0f)
     {
   
          // Add a new obstacle
