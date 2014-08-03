@@ -13,9 +13,29 @@
 character = (Character*)[CCBReader load:@"Character"];
 [physicsNode addChild:character];
 
-timeSinceObstacle += delta;
+//timeSinceObstacle += delta;
     
-    if (timeSinceObstacle > 10/60)
+    
+        
+
+}
+
+(void)update:(CCTime)delta
+{
+     //put update   code here
+  //  character = (Character*)[CCBReader load:@"Character"];
+    
+    //if ( count == 2)
+    
+    {
+        
+  // [physicsNode addChild:character];
+    }
+    count++;
+    timeSinceObstacle += delta; // delta is approximately 1/60th of a second
+ 
+    // Check to see if two seconds have passed
+    if (timeSinceObstacle > 2.0f)
     {
   
          // Add a new obstacle
@@ -23,32 +43,12 @@ timeSinceObstacle += delta;
         
     
     }
-    
-        
 
-}
-
-/*-(void)update:(CCTime)delta
-{
-     //put update   code here
-    character = (Character*)[CCBReader load:@"Character"];
-    
-    //if ( count == 2)
-    
-    {
-        
-   [physicsNode addChild:character];
-    }
-    count++;
-    timeSinceObstacle += delta; // delta is approximately 1/60th of a second
- 
-    // Check to see if two seconds have passed
-   
         // Then reset the timer.
         timeSinceObstacle = 0.0f;
     }
 }
-   */
+
 
 // put new methods here
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
