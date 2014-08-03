@@ -15,11 +15,11 @@ character = (Character*)[CCBReader load:@"Character"];
 
 timeSinceObstacle += delta;
     
-  if (timeSinceObstacle > 5.5f)
+     if (timeSinceObstacle > 5.5f)
     {
   
          // Add a new obstacle
-        [self addObstacle];
+           [self addObstacle];
         
     
     }
