@@ -9,7 +9,7 @@
     // your code here
     [self addObstacle];
     timeSinceObstacle = 1.0f;
-    count = 5;
+    count = 1;
 character = (Character*)[CCBReader load:@"Character"];
 [physicsNode addChild:character];
 
