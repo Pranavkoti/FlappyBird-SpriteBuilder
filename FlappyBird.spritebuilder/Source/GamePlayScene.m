@@ -20,6 +20,9 @@ timeSinceObstacle += delta;
          // Add a new obstacle
         [self addObstacle];
         
+        [self addObstacle];
+        
+    
     }
     
         
